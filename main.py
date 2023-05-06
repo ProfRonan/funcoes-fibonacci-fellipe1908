@@ -1,23 +1,24 @@
-a = 4
-B = 2
-#C = B - 1
-#R = C + B
-#if a < 0 :
-    #print("ValueError")
-    
-#if a > -1:
-    #print("Fibonacci(0) = 0")
-    #B += 1
-    #a -= 1
-#if a > 0:
-    #print("Fibonacci(1) = 1")
-    #B += 1
-    #a -= 1
-while a > 2:
-    C = B - 2
-    H = B - 1
-    R = H + C
-    print(f"Fibonacci({B}) = {R}")
-    a -= 1
-    B += 1
-    
+print("Digite o Valor desejavel do Fibonacc: ")
+int(input(">>"))
+b = 1
+t1 = 0
+t2 = 1
+if a < 0:
+    raise ValueError("n tem que ser maior do que zero")
+
+if a == 0:
+    print(0)
+if a == 1:
+    t3 = t1 + t2
+    t1 = t2
+    t2 = t3
+    print(t3)
+    b += 1
+while b < a:
+    t3 = t1 + t2
+    t1 = t2
+    t2 = t3
+    b += 1
+    if b == a:
+        print(t3)
+
