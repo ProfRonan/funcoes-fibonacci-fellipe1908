@@ -1,24 +1,24 @@
-print("Digite o Valor desejavel do Fibonacc: ")
-a = int(input(">>"))
-b = 1
-t1 = 0
-t2 = 1
-if a < 0:
-    raise ValueError("n tem que ser maior do que zero")
-
-if a == 0:
-    print(0)
-if a == 1:
-    t3 = t1 + t2
-    t1 = t2
-    t2 = t3
-    print(t3)
-    b += 1
-while b < a:
+def fib():
+    print("Digite o Valor desejavel do Fibonacc: ")
+    a = int(input(">>"))
+    b = 1
+    t1 = 0
+    t2 = 1
+    if a < 0:
+        raise ValueError("n tem que ser maior do que zero")
+    if a == 0:
+        print(0)
+    if a == 1:
+        t3 = t1 + t2
+        t1 = t2
+        t2 = t3
+        print(t3)
+        b += 1
+    while b < a:
     t3 = t1 + t2
     t1 = t2
     t2 = t3
     b += 1
     if b == a:
         print(F"Fibonacci({a}) = {t3}")
-
+fib()
