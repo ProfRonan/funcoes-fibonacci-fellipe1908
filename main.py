@@ -1,5 +1,5 @@
 print("Digite o Valor desejavel do Fibonacc: ")
-int(input(">>"))
+a = int(input(">>"))
 b = 1
 t1 = 0
 t2 = 1
@@ -20,5 +20,5 @@ while b < a:
     t2 = t3
     b += 1
     if b == a:
-        printf"(Fibonacci({a}) = {t3})"
+        print(F"Fibonacci({a}) = {t3}")
 
