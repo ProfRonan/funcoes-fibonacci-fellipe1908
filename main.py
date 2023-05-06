@@ -20,5 +20,5 @@ while b < a:
     t2 = t3
     b += 1
     if b == a:
-        print(t3)
+        printf"(Fibonacci({a}) = {t3})"
 
